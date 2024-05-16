@@ -23,7 +23,7 @@
 /* Typography
 --------------------------------------------- */
 body {
-	
+	margin: 0;
 }
 
 h1,
@@ -119,12 +119,16 @@ a:active {
 /* Header
 --------------------------------------------- */
 
-.header {
-}
+
 
 .topNav {
-	display: block;
+	display: flex;
 	justify-content: space-between;
+}
+
+#navButton,
+.mainLogo {
+	margin: 0.5rem;
 }
 
 /* Main
