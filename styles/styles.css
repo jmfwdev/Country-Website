@@ -43,7 +43,12 @@ p {
 /* Elements
 --------------------------------------------- */
 ul {
-	
+}
+
+li {
+	display: flex;
+	justify-content: center;
+	border: solid .0625rem rgba(0, 0, 0, 0.300);
 }
 
 ol {
@@ -65,7 +70,10 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	
+	color: black;
+	text-decoration: none;
+	padding: 1rem 6rem;
+	display: block;
 }
 
 a:visited {
@@ -95,14 +103,37 @@ a:active {
 # Components
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+#navList {
+	display: none;
+}
+
+#navList.toggled {
+	display: block;
+	padding: 0;
+}
+
 /* Header
 --------------------------------------------- */
 
+.header {
+}
 
-
+.topNav {
+	display: block;
+	justify-content: space-between;
+}
 
 /* Main
 --------------------------------------------- */
+.islandImg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 
 
 /* Footer
