@@ -36,6 +36,7 @@ h3,
 h4,
 h5,
 h6 {
+	text-align: center;
 	
 }
 
@@ -50,10 +51,6 @@ ul {
 }
 
 li {
-	display: flex;
-	justify-content: center;
-	border: solid .0625rem rgba(255, 255, 255, 0.3);
-	background-color: rgba(0, 0, 0, 0.900);
 }
 
 ol {
@@ -75,10 +72,6 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: rgb(255, 255, 255);
-	text-decoration: none;
-	padding: 1rem 6rem;
-	display: block;
 }
 
 a:visited {
@@ -124,7 +117,19 @@ a:active {
 /* Header
 --------------------------------------------- */
 
+.topNav li {
+	display: flex;
+	justify-content: center;
+	border: solid .0625rem rgba(255, 255, 255, 0.3);
+	background-color: rgba(0, 0, 0, 0.900);
+}
 
+.topNav a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 1rem 6rem;
+	display: block;
+}
 
 .topNav {
 	padding: 1rem;
@@ -171,7 +176,24 @@ a:active {
 	z-index: -1;
 }
 
-.mainBody2 {
+.mainBody2 h2 {
+	margin-top: 0;
+}
+
+.mainBody2 p {
+	padding-bottom: 3rem;
+	margin-bottom: 0;
+}
+
+.aboutSection {
+	padding: 2rem;
+}
+
+.aboutSection,
+.foodSection,
+.landmarkSection,
+.islandSection {
+	background-color: aquamarine;
 }
 
 
