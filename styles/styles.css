@@ -22,8 +22,12 @@
 
 /* Typography
 --------------------------------------------- */
+html {
+	font-family: 'philosopher', sans-serif;
+}
+
 body {
-	margin-top: 4rem;
+	margin: 3rem 0 auto;
 }
 
 h1,
@@ -149,6 +153,25 @@ a:active {
 	display: block;
 	max-width: 100%;
 	height: auto;
+}
+
+.mainImg h1{
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 2rem;
+	background-color: yellow;
+	padding: 0.5rem 1rem;
+}
+
+
+.mainImg {
+	position: sticky;
+	top: 3rem;
+	z-index: -1;
+}
+
+.mainBody2 {
 }
 
 
