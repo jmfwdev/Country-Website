@@ -23,7 +23,7 @@
 /* Typography
 --------------------------------------------- */
 body {
-	margin: 0;
+	margin-top: 4rem;
 }
 
 h1,
@@ -48,7 +48,8 @@ ul {
 li {
 	display: flex;
 	justify-content: center;
-	border: solid .0625rem rgba(0, 0, 0, 0.300);
+	border: solid .0625rem rgba(255, 255, 255, 0.3);
+	background-color: rgba(0, 0, 0, 0.900);
 }
 
 ol {
@@ -70,7 +71,7 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: black;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 	padding: 1rem 6rem;
 	display: block;
@@ -122,13 +123,24 @@ a:active {
 
 
 .topNav {
-	display: flex;
-	justify-content: space-between;
+	padding: 1rem;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.750);
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
-#navButton,
+/* #navButton,
 .mainLogo {
 	margin: 0.5rem;
+} */
+
+#navButton {
+	margin: 0.5rem;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 /* Main
