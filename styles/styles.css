@@ -189,11 +189,8 @@ a:active {
 	padding: 2rem;
 }
 
-.aboutSection,
-.foodSection,
-.landmarkSection,
-.islandSection {
-	background-color: aquamarine;
+.aboutSection {
+	background-color: #07E6EB;
 }
 
 
