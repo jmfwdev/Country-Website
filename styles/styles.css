@@ -129,6 +129,7 @@ a:active {
 	text-decoration: none;
 	padding: 1rem 6rem;
 	display: block;
+	font-size: 0.9rem;
 }
 
 .topNav {
@@ -201,13 +202,23 @@ a:active {
 	padding: 1rem 0.25rem;
 }
 
-.foodSection img {
+.foodSection img,
+.landmarkSection img {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
 	clip-path: circle(50% at 50% 50%);
 	width: auto;
 	height: 300px;
+}
+
+.islandSection img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	clip-path: circle(50% at 50% 50%);
+	width: auto;
+	height: 100%;
 }
 
 
