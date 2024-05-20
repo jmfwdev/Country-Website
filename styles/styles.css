@@ -138,6 +138,7 @@ a:active {
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1;
 }
 
 /* #navButton,
@@ -176,21 +177,37 @@ a:active {
 	z-index: -1;
 }
 
+.mainBody2 {
+	background-color: white;
+}
 .mainBody2 h2 {
-	margin-top: 0;
+	margin: 0;
+	background-color: white;
+	padding: 1.5rem;
 }
 
 .mainBody2 p {
-	padding-bottom: 3rem;
-	margin-bottom: 0;
+	padding: 1rem 0 3rem;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .aboutSection {
 	padding: 2rem;
+	background-color: #07E6EB;
 }
 
-.aboutSection {
-	background-color: #07E6EB;
+.aboutSection p {
+	padding: 1rem 0.25rem;
+}
+
+.foodSection img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	clip-path: circle(50% at 50% 50%);
+	width: auto;
+	height: 300px;
 }
 
 
