@@ -135,7 +135,7 @@ a:active {
 .topNav {
 	padding: 1rem;
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0.750);
+	background-color: #4b4b4b;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -227,8 +227,11 @@ a:active {
 
 footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	font-size: 0.5rem;
+	background-color: #4b4b4b;
+	color: white;
+	height: 4rem;
 }
 
 footer ul li{
@@ -238,8 +241,19 @@ footer ul li{
 footer ul {
 	text-decoration: none;
 	padding: 0;
+	justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.footerNav {
-	display: none;
+.educationPurpose {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
