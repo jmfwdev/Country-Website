@@ -143,13 +143,13 @@ a:active {
 	z-index: 1;
 }
 
-/* #navButton,
 .mainLogo {
-	margin: 0.5rem;
-} */
+	width: 2.5rem;
+    height: 2.5rem;
+}
 
 #navButton {
-	margin: 0.5rem;
+	margin: 1rem;
 	position: absolute;
 	top: 0;
 	right: 0;
