@@ -170,11 +170,9 @@ a:active {
 	position: absolute;
 	z-index: 2;
 	bottom: 16rem;
-	left: 1.5rem;
 	background-color: black;
 	color: white;
 	padding: 0.5rem 1rem;
-	z-index: 2;
 }
 
 .mainImg h1{
