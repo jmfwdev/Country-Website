@@ -161,7 +161,7 @@ a:active {
 }
 
 
-@media (min-width: 50em) {
+@media (min-width: 62.5em) {
     #navButton {
 		display: none;
 	}
