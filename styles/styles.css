@@ -31,6 +31,12 @@ body {
 	line-height: 1.5;
 }
 
+@media (min-width: 75em) {
+	body {
+		font-size: 120%;
+	}
+}
+
 h1,
 h2,
 h3,
@@ -75,12 +81,11 @@ table {
 a {
 }
 
-a:visited {
-	
-}
 
+
+a:visited,
 a:hover {
-	
+	background-color: #383737;
 }
 
 a:focus {
@@ -155,6 +160,37 @@ a:active {
 	right: 0;
 }
 
+
+@media (min-width: 50em) {
+    #navButton {
+		display: none;
+	}
+
+	#navList {
+		display: flex;
+		width: 100vw;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	#navList a {
+		padding: 1rem 0;
+		width: 10rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	.topNav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.topNav li {
+		border: none;
+	}
+}
+
 /* Main
 --------------------------------------------- */
 .islandImg {
@@ -197,6 +233,17 @@ a:active {
 
 .mainBody2 {
 	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+@media (min-width:62.5em) {
+	.mainBody2 {
+		height: 100vh;
+	}
+
 }
 .mainBody2 h2 {
 	margin: 0;
@@ -212,6 +259,10 @@ a:active {
 	text-align: center;
 }
 
+.mainBody2 section {
+	padding: 1rem;
+}
+
 .aboutSection {
 	padding: 2rem;
 	background-color: #85eff1;
@@ -225,25 +276,30 @@ a:active {
 .aboutSection p {
 	padding: 1rem 0.25rem;
 	text-align: left;
+	max-width: 50rem;
+}
+
+@media (min-width:50em) {
+	.aboutSection {
+		height: 80vh;
+	}
+
+	.foodSection a:hover,
+	.landmarkSection a:hover,
+	.islandSection a:hover {
+		opacity: 0.2;
+	}
 }
 
 .foodSection img,
-.landmarkSection img {
-	display: block;
-	margin: 0 auto;
-	max-width: 100%;
-	clip-path: circle(50% at 50% 50%);
-	width: auto;
-	height: 300px;
-}
-
+.landmarkSection img,
 .islandSection img {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
 	clip-path: circle(50% at 50% 50%);
 	width: auto;
-	height: 100%;
+	height: 300px;
 }
 
 
