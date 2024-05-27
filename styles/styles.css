@@ -269,7 +269,7 @@ a:active {
 
 .aboutSection {
 	padding: 2rem;
-	background-color: #85eff1;
+	background-color: #4b4b4b;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -281,6 +281,11 @@ a:active {
 	padding: 1rem 0.25rem;
 	text-align: left;
 	max-width: 50rem;
+	color: white;
+}
+
+.aboutSection h2 {
+	color: white;
 }
 
 @media (min-width:50em) {
