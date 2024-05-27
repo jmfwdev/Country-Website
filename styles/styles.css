@@ -138,6 +138,10 @@ a:active {
 	font-size: 0.9rem;
 }
 
+.topNav .logoHome {
+	padding: 0;
+}
+
 .topNav {
 	padding: 1rem;
 	position: fixed;
