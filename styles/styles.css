@@ -343,6 +343,24 @@ a:active {
 	height: 300px;
 }
 
+table {
+	background-color: white;
+	border: solid .125rem #383737;
+	border-spacing: 0;
+}
+
+th,
+td {
+	border: .0625rem solid rgb(160 160 160);
+	padding: 8px 10px;
+}
+
+table caption {
+	color: white;
+	caption-side: bottom;
+	font-weight: bold;
+}
+
 
 /* Footer
 --------------------------------------------- */
