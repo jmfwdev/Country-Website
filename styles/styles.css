@@ -253,6 +253,10 @@ a:active {
 	align-items: center;
 }
 
+.creditBodySection ul {
+	padding: 0;
+}
+
 @media (min-width:62.5em) {
 	.mainBody2 {
 		height: 100vh;
