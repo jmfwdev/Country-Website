@@ -48,60 +48,50 @@ h6 {
 }
 
 p {
-	
+	color: white;
 }
 
 
 /* Elements
 --------------------------------------------- */
 ul {
+	padding: 0;
 }
 
-li {
-}
-
-ol {
-	
-}
-
-dl {
-	
-}
-
-figure {
-	
-}
+/* Table
+--------------------------------------------- */
 
 table {
-	
+	background-color: white;
+	border: solid .125rem #383737;
+	border-spacing: 0;
+}
+
+th,
+td {
+	border: .0625rem solid rgb(160 160 160);
+	padding: 8px 10px;
+}
+
+table caption {
+	color: white;
+	caption-side: bottom;
+	font-weight: bold;
 }
 
 /* Links
 --------------------------------------------- */
-a {
-}
-
-
 
 a:visited,
-a:hover {
+a:hover,
+a:focus,
+a:active {
 	background-color: #383737;
 }
-
-a:focus {
-	
-}
-
-a:active {
-	
-}
-
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-
-
 
 /*--------------------------------------------------------------
 # Components
@@ -127,11 +117,42 @@ a:active {
 	display: flex;
 }
 
+.topNav li,
+.topNav {
+	background-color: #4b4b4b;
+}
+
+.topNav,
+#navButton {
+	top: 0;
+	right: 0;
+}
+
+.topNav {
+	padding: 1rem;
+	position: fixed;
+	left: 0;
+	z-index: 1;
+}
+
+.mainLogo {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.topNav .logoHome {
+	padding: 0;
+	align-items: center;
+}
+
+#navButton {
+	margin: 1rem;
+	position: absolute;
+}
 
 .topNav li {
 	justify-content: center;
 	border: solid .0625rem rgba(255, 255, 255, 0.3);
-	background-color: #4b4b4b;
 }
 
 .topNav a {
@@ -142,57 +163,38 @@ a:active {
 	font-size: 0.9rem;
 }
 
-.topNav .logoHome {
-	padding: 0;
-	align-items: center;
-}
-
-.topNav {
-	padding: 1rem;
-	position: fixed;
-	background-color: #4b4b4b;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-}
-
-.mainLogo {
-	width: 2.5rem;
-    height: 2.5rem;
-}
-
-#navButton {
-	margin: 1rem;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
+/* Media Query Header
+--------------------------------------------- */
 
 @media (min-width: 62.5em) {
     #navButton {
 		display: none;
 	}
 
-	#navList {
+	#navList,
+	#navList a,
+	.topNav {
 		display: flex;
+	}
+
+	#navList,
+	.topNav {
+		align-items: center;
+	}
+
+	#navList {
 		width: 100vw;
 		justify-content: flex-end;
-		align-items: center;
 	}
 
 	#navList a {
 		padding: 1rem 0;
 		width: 10rem;
-		display: flex;
 		justify-content: center;
 	}
 
 	.topNav {
-		display: flex;
 		justify-content: space-between;
-		align-items: center;
 		padding: 0 1rem;
 	}
 
@@ -203,6 +205,17 @@ a:active {
 
 /* Main
 --------------------------------------------- */
+.mainImg p,
+.mainImg h1 {
+	position: absolute;
+	z-index: 2;
+}
+
+.mainImg p,
+.mainImg {
+	background-color: black;
+}
+
 .islandImg {
 	display: block;
 	height: auto;
@@ -212,74 +225,70 @@ a:active {
 	opacity: 50%;
 }
 
-.mainImg p {
-	position: absolute;
-	z-index: 2;
-	bottom: 16rem;
-	background-color: black;
-	color: white;
-	padding: 0.5rem 1rem;
-}
-
-.mainImg h1{
-	position: absolute;
-	z-index: 2;
-	bottom: 12rem;
-	background-color: rgb(255, 255, 255);
-	padding: 0.5rem 2rem;
-	font-size: 2rem;
-}
-
-
 .mainImg {
+	display: flex;
 	position: sticky;
 	top: 3rem;
 	z-index: -1;
 	height: 100vh;
-	display: flex;
 	justify-content: center;
-	background-color: black;
 }
 
-.mainBody2 {
+.mainImg h1 {
+	bottom: 12rem;
+	padding: 0.5rem 2rem;
+	font-size: 2rem;
 	background-color: white;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
 }
 
+.mainImg p {
+	bottom: 16rem;
+	padding: 0.5rem 1rem;
+}
+
+/* Body
+--------------------------------------------- */
+
+.mainBody2,
 .creditBodySection {
-	background-color: white;
-	display: flex;
-	flex-direction: column;
 	align-items: center;
+	display: flex;
 }
 
-.creditBodySection ul {
-	padding: 0;
+.mainBody2,
+.creditBodySection,
+.mainBody2 h2,
+.creditBodySection h2 {
+	background-color: white;
 }
 
-@media (min-width:62.5em) {
-	.mainBody2 {
-		height: 100vh;
-	}
-
-}
 .mainBody2 h2,
 .creditBodySection h2 {
 	margin: 0;
-	background-color: white;
 	padding: 1.5rem;
 	border: 1.5rem;
 	border-radius: 50%;
 }
 
 .mainBody2 p,
+.mainBody2 blockquote,
+.creditBodySection {
+	text-align: center;
+}
+
+.mainBody2 p,
 .mainBody2 blockquote {
 	padding: 1rem 0 3rem;
 	margin: 0 auto;
-	text-align: center;
+}
+
+.mainBody2 {
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.creditBodySection {
+	flex-direction: column;
 }
 
 .creditBodySection li {
@@ -291,13 +300,25 @@ a:active {
 	color: black;
 }
 
-.creditBodySection {
-	text-align: center;
+/* Media Query Body
+--------------------------------------------- */
+
+@media (min-width:62.5em) {
+	.mainBody2 {
+		height: 100vh;
+	}
 }
+
+/* About Sections
+--------------------------------------------- */
 
 .mainBody2 section,
 .creditBodySection section {
 	padding: 2rem 1rem;
+}
+
+.aboutSection h2 {
+	color: white;
 }
 
 .aboutSection {
@@ -314,11 +335,6 @@ a:active {
 	padding: 1rem 0.25rem;
 	text-align: left;
 	max-width: 50rem;
-	color: white;
-}
-
-.aboutSection h2 {
-	color: white;
 }
 
 .creditBodySection section a:hover {
@@ -350,25 +366,6 @@ a:active {
 	height: 300px;
 }
 
-table {
-	background-color: white;
-	border: solid .125rem #383737;
-	border-spacing: 0;
-}
-
-th,
-td {
-	border: .0625rem solid rgb(160 160 160);
-	padding: 8px 10px;
-}
-
-table caption {
-	color: white;
-	caption-side: bottom;
-	font-weight: bold;
-}
-
-
 /* Footer
 --------------------------------------------- */
 
@@ -378,7 +375,6 @@ footer ul li{
 
 footer ul {
 	text-decoration: none;
-	padding: 0;
 	justify-content: center;
     display: flex;
     flex-direction: column;
