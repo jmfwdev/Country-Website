@@ -154,6 +154,7 @@ a:active {
 .topNav li {
 	justify-content: center;
 	border: solid .0625rem rgba(255, 255, 255, 0.3);
+	padding: 1rem;
 }
 
 .topNav a {
@@ -199,6 +200,7 @@ a:active {
 
 	.topNav li {
 		border: none;
+		padding: 0;
 	}
 }
 
